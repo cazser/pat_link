@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .frame{
+        width: 800px;
+        height: 800px;
+        background: black;
+        
+        position: static;
+    }
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <div class="headMenu">
+            <div class="help"></div>
+            <div class = "pause"></div>
+            <div class="processBar" id="processBar">
+                <progress id="bar" value="300" max="300"></progress>
+            </div>
+        </div>
+        <div class="gameArea"></div>
+    </div>
+    <script>
+        setInterval(
+            "bar.value--", 1000
+        )
+    </script>
+</body>
+</html>
