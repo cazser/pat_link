@@ -9,13 +9,22 @@
             width: 800px;
             height: 800px;
             background: black;
-            text-align:center 
+            
+            position: static;
         }
         .name{
-            top: 400px;
+            position: relative;
+            top: 45%;
+            left: 40%;
         }
         .name >h1{
             color: white;
+        }
+
+        .start{
+            position: relative;
+            left: 45%;
+            top: 450px;
         }
     </style>
 </head>
@@ -25,8 +34,8 @@
         <div class="name">
             <h1>宠物连连看
                 </h1>
-            </div>
-        <button>开始游戏 </button>
+        </div>
+        <button class="start">开始游戏 </button>
     </div>
 </body>
 </html>
